@@ -1,36 +1,39 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🧠 LastPing — ETH-Only Dead Man's Switch (Frontend)
 
-## Getting Started
+This is the **frontend** for [LastPing](https://last-ping-app.vercel.app) — a minimal, ETH-only fallback app. Register a beneficiary and ping regularly. If you don’t, they can claim your vault.
 
-First, run the development server:
+The smart contract lives in a separate repo:
+🔗 [`last-ping-contract`](https://github.com/shan8851/last-ping-contract)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 🌐 Live Demo
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+[https://last-ping-app.vercel.app](https://last-ping-app.vercel.app)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## ✨ Features
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- 🔐 Wallet connection via Wagmi + Viem
+- 💀 Dead simple ETH-only fallback UI
+- ⏳ Ping + vault management (read/write)
+- 🎨 Fully themed with Tailwind + custom fonts
+- 🧠 ENS avatar + name resolution
+- 🌈 Responsive, dark-themed design
 
-## Learn More
+## 🛠️ Stack
 
-To learn more about Next.js, take a look at the following resources:
+- **Next.js 15 App Router** (with fallback to Webpack)
+- **Tailwind CSS** w/ custom theme + fonts
+- **Wagmi v2 + Viem** for contract interaction
+- **Radix UI** for dialogs/popovers
+- **TypeScript** (strict mode)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🧠 Philosophy
+In crypto, life happens. Hardware fails. People disappear.
+LastPing is your fallback protocol — just in case.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 📝 License
 
-## Deploy on Vercel
+MIT
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 👤 Author
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Built by @shan8851 — deployed on Sepolia · 100% open source.
